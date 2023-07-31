@@ -36,10 +36,13 @@ int main()
     // Create the top half of the diamond
     for(char i = letter; i>=limit; i--)
     {
+        // Print the letters in increasing order
         for(char j=limit; j <= i; j++)
         {
             cout << j;
         }
+
+          // Print the spacing
         for(int k=0; k<space; k++)
         {
             cout << " ";
@@ -60,11 +63,13 @@ int main()
     // Create the bottom half of the diamond
     for(char i = limit+1; i<=letter; i++)
     {
+        // Print the letters in increasing order
         for(char j=limit; j <= i; j++)
         {
             cout << j;
         }
 
+        // Print the spaceing
         for(int k=space; k>0; k--)
         {
             cout << " ";
